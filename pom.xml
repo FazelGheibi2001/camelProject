@@ -46,6 +46,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jetty</artifactId>
+			<version>3.15.0</version>
+			<!-- use the same version as your Camel core version -->
+		</dependency>
 	</dependencies>
 
 	<build>
