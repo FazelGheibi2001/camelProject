@@ -8,6 +8,8 @@ public class FirstRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-
+        from("servlet:http://localhost:8585/hello")
+                .to("log:foo");
+        System.out.println("hi");
     }
 }
